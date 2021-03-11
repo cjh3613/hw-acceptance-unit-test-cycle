@@ -1,0 +1,21 @@
+.....F
+
+Failures:
+
+  1) find all movies with the same director should not return similar movies with the same director
+     Failure/Error: expect(Movie.search_similar_movies('Joss Whedon')).not_to eq [movie3]
+
+     NameError:
+       undefined local variable or method `movie3' for #<RSpec::ExampleGroups::FindAllMoviesWithTheSameDirector:0x0000000004f7f2e8>
+     # ./spec/model/movie_model_spec.rb:15:in `block (2 levels) in <top (required)>'
+
+2 deprecation warnings total
+
+Finished in 0.04723 seconds (files took 1.51 seconds to load)
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/model/movie_model_spec.rb:11 # find all movies with the same director should not return similar movies with the same director
+
+Coverage report generated for Cucumber Features, RSpec to /home/ec2-user/environment/hw-acceptance-unit-test-cycle/rottenpotatoes/coverage. 41 / 43 LOC (95.35%) covered.
